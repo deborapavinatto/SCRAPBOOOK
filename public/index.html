@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Scrapbook 26/10</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="list">
+            <header>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4 offset-4">
+                            <form>
+                                <input type="search" name="search" class="form-control search"
+                                    placeholder="Digite sua Pesquisa aqui..." onkeyup="pesquisar(event)" />
+                            </form>
+                        </div>
+                        <div class="col-1 offset-3">
+                            <a href="#" class="btn-add">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-square"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="container-fluid">
+                    <div class="row row-empty">
+                        <div class="col-8 offset-2 mt-5">
+                            <p class="lead text-center">
+                                Nenhum item cadastrado até o momento
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row row-cards d-none"></div>
+                </div>
+            </main>
+        </div>
+        <div class="register d-none">
+            <header>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-1">
+                            <a href="#" class="btn-back">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-square"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4 offset-4 mt-5">
+                            <form class="register-form">
+                                <div class="alert alert-danger d-none">
+                                    Preecha todos os campos corretamente.
+                                </div>
+                                <div class="alert alert-success d-none" role="alert">
+                                    Salvo com sucesso
+                                </div>
+                                <div class="form-group">
+                                    <label for="titulo">Título</label>
+                                    <input type="text" name="titulo" class="form-control" id="titulo" placeholder="Digite seu título"/>
+                                    <small class="form-text text-muted">
+                                        Máximo de 20 caracteres.    
+                                    </small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="texto">Texto</label>
+                                    <textarea class="form-control" placeholder="Digite seu texto" name="texto" id="texto" rows="3"></textarea>
+                                </div>
+                                <button type="submit"  class="btn btn-primary float-right btn-salvar">Salvar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+       <script src="./bundle.js"></script>
+    </body>
+</html>

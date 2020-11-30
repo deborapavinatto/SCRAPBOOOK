@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    font-family: 'Arial';
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #b18d3e;
+    box-sizing: border-box;
+}
+
+header form {
+    margin-top: 22px;
+}
+
+header form .search {
+    text-align: center;
+    border-color: #b18d3e;
+}
+
+.btn-add, .btn-back {
+    color: #b18d3e;
+    font-size: 40px;
+    display: block;
+    margin-top: 7px;
+}
+
+.card {
+    border-color: #b18d3e;
+}
+
+.card .action a {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.card .action a:last-child {
+    color: red;
+}
+
+.register main input, .register main textarea {
+    border-color: #b18d3e;
+}
+
+.register main button {
+    background-color: #fff;
+    border-color: #b18d3e;
+    color: #b18d3e;
+}
+
+.error {
+    border-color: red !important;
+}
